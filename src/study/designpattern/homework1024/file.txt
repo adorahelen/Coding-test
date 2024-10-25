@@ -1,5 +1,4 @@
-#written by FileProperties
-#Thu Oct 24 23:55:37 KST 2024
+#Fri Oct 25 00:12:05 KST 2024
 depth=32
 width=1024
 height=512

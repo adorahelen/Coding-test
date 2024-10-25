@@ -20,9 +20,13 @@ public class FileProperties implements FileIO {
     @Override
     public void writeToFile(String filename) throws IOException {
         try (Writer writer = new FileWriter(filename)) {
-            properties.store(writer, "written by FileProperties");  // 파일에 속성 저장
+//            properties.store(writer, "written by FileProperties");  // 파일에 속성 저장
+            properties.store(writer, null);  // 주석 없이 저장
         }
     }
+    // #written by FileProperties
+    //#Tue May 24 11:42:08 KST 2022
+    // 해당 주석은 java.util.Properties 클래스의 store() 메서드를 호출할 때 자동으로 기록
 
     @Override
     public void setValue(String key, String value) {
